@@ -11,13 +11,14 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
+  background-color: #ececec;
 }
 
 .avatarsWrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.25rem;
-  border: 2px solid #ececec;
+  border: 2px solid #e4e4e4;
   border-radius: 0.5rem;
   padding: 6.25rem;
   background-color: #fff;
