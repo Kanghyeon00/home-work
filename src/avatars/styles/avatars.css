@@ -1,0 +1,97 @@
+/* 여기에 스타일을 구현해 주세요 */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "SUIT", sans-serif;
+}
+
+.avatarsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.avatarsWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  border: 2px solid #ececec;
+  border-radius: 0.5rem;
+  padding: 6.25rem;
+  background-color: #fff;
+}
+
+.profileImgWrapper {
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+}
+
+.profileImgWrapper img {
+  width: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profileImgWrapper img:hover {
+  filter: grayscale(30%) brightness(70%);
+  transition: 0.3s;
+}
+
+/* online */
+.online {
+  background-color: #4cfe88;
+  width: 1.1113rem;
+  height: 1.1113rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.online:hover {
+  cursor: pointer;
+}
+
+.online:hover + .userState {
+  display: flex;
+}
+
+/* offline */
+.offline {
+  background-color: #dbdbdb;
+  width: 1.1113rem;
+  height: 1.1113rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.offline:hover {
+  cursor: pointer;
+}
+
+.offline:hover + .userState {
+  display: flex;
+}
+
+.userState {
+  background-color: rgb(128, 128, 128);
+  border-radius: 0.2rem;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 3.125rem;
+  height: 0.8rem;
+  margin: auto;
+}
+
+.userState span {
+  color: #fff;
+  font-size: 0.5rem;
+}
