@@ -7,3 +7,4 @@
 - [마크다운 문법](./src/md/markdown.md)
 - [회고](./src/md/retrospect.md)
 # home-work
+avatars: https://kanghyeon00.github.io/home-work/src/avatars/avatars.html
