@@ -1,0 +1,119 @@
+/* CSS를 활용하여 레이아웃 및 스타일링을 완성해주세요 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+header {
+  text-align: center;
+  img {
+    margin-bottom: 1.25rem;
+  }
+}
+
+.inputWrapper input {
+  width: 30rem;
+  height: 3rem;
+  text-indent: 0.9rem;
+  margin-bottom: 0.625rem;
+  border: 1px solid #dadada;
+}
+
+.inputWrapper input:focus {
+  outline: none;
+  background-color: #e9f0fd;
+  border: 1px solid #03cf5d;
+}
+
+.loginButton {
+  background-color: #03cf5d;
+  border: none;
+  width: 30rem;
+  height: 2.8125rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.625rem;
+}
+
+.checkWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* 기본 체크박스 숨김 */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* 로그인 상태 유지 체크박스 */
+.custom-checkbox {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background: url("../../assets/images/unchecked.svg") no-repeat center/contain;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* 체크되었을 때 */
+input[type="checkbox"]:checked + .custom-checkbox {
+  background: url("../../assets/images/checked.svg") no-repeat center/contain;
+}
+
+/* IP 보안 ON/OFF */
+.ip-security {
+  cursor: pointer;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+}
+
+/* 체크되었을 때 텍스트 변경 */
+#ipSecurity:checked + a + span::after {
+  content: "ON";
+  color: green;
+  font-weight: bold;
+}
+
+#ipSecurity + a + span::after {
+  content: "OFF";
+  color: gray;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 7px;
+}
+
+@media (max-width: 768px) {
+  .loginWrapper {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .inputWrapper input,
+  .loginButton {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .ip-security {
+    display: none;
+  }
+}

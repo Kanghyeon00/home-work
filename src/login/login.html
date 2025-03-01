@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./styles/login.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon/likelion.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="loginContainer">
+      <div class="loginWrapper">
+        <header>
+          <img src="../assets/images/naver-logo.svg" alt="로고" />
+        </header>
+        <main>
+          <form action="/" method="post">
+            <div class="inputWrapper">
+              <label for="userId">
+                <input type="email" placeholder="아이디(이메일)" required />
+              </label>
+            </div>
+            <div class="inputWrapper">
+              <label for="userPw">
+                <input type="password" placeholder="비밀번호" required />
+              </label>
+            </div>
+            <button class="loginButton" type="submit">로그인</button>
+          </form>
+        </main>
+        <div class="checkWrapper">
+          <label>
+            <input type="checkbox" id="autoLogin" hidden />
+            <span class="custom-checkbox"></span> 로그인 상태 유지
+          </label>
+
+          <label for="ipSecurity" class="ip-security">
+            <input type="checkbox" id="ipSecurity" hidden />
+            <a href="./pages/ip_security.html">IP 보안</a>
+            <span></span>
+            <!-- 체크박스를 나타내는 빈 span -->
+          </label>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
