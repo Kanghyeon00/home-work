@@ -15,8 +15,8 @@
 2. HTML: https://github.com/Kanghyeon00/home-work/blob/main/src/avatars/avatars.html
 3. CSS: https://github.com/Kanghyeon00/home-work/blob/main/src/avatars/styles/avatars.css
 
-## 4주차 Login
+## 4주차 Apple
 
-1. 결과창: https://kanghyeon00.github.io/home-work/src/login/login.html
-2. HTML: https://github.com/Kanghyeon00/home-work/blob/main/src/login/login.html
-3. CSS: https://github.com/Kanghyeon00/home-work/blob/main/src/login/styles/login.css
+1. 결과창: https://kanghyeon00.github.io/home-work/src/apple/apple.html
+2. HTML: https://github.com/Kanghyeon00/home-work/blob/main/src/apple/apple.html
+3. CSS: https://github.com/Kanghyeon00/home-work/blob/main/src/apple/styles/apple.css
