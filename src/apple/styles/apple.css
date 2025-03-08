@@ -1,0 +1,201 @@
+@import "./card-component.css";
+@import url("./base.css");
+@import url("./card-component.css");
+@import url("./reset.css");
+@import url("./theme.css");
+/* 카드 레이아웃 */
+
+body {
+  font-family: "SUIT";
+  box-sizing: border-box;
+}
+
+.appleWrapper {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.iPadProWrapper {
+  background-image: url("../products/ipad_pro_2x.jpeg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  height: 36.25rem;
+}
+
+.blackTheme {
+  h1 {
+    color: var(--white);
+    font-size: 3rem;
+    margin-top: 3rem;
+  }
+
+  p {
+    color: var(--white);
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+  }
+
+  span {
+    color: var(--gray);
+    font-size: 1.2rem;
+  }
+
+  .blackThemeButtonWrapper {
+    margin-top: 1rem;
+  }
+
+  .more {
+    color: var(--white);
+    background-color: var(--blue-400);
+    border: none;
+    padding: 0.6rem 0.9rem;
+    border-radius: 5rem;
+    margin-right: 0.3rem;
+  }
+
+  .price {
+    color: var(--blue-100);
+    background-color: transparent;
+    border: 1px solid var(--blue-100);
+    padding: 0.6rem 0.9rem;
+    border-radius: 5rem;
+    margin-left: 0.3rem;
+  }
+}
+
+.iPadAirWrapper {
+  background-image: url(../products/ipad_air_wide.jpeg);
+  background-position: center;
+  text-align: center;
+  width: 100%;
+  height: 36.25rem;
+}
+
+.whiteTheme {
+  h1 {
+    color: var(--black);
+    font-size: 3rem;
+    margin-top: 3rem;
+  }
+
+  p {
+    color: var(--black);
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+  }
+
+  span {
+    color: var(--gray);
+    font-size: 1.2rem;
+  }
+
+  .whiteThemeButtonWrapper {
+    margin-top: 1rem;
+  }
+
+  .more {
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 5rem;
+    border: none;
+    padding: 0.625rem 1.25rem;
+    border-radius: 5rem;
+    margin-right: 0.3rem;
+  }
+
+  .price {
+    color: var(--black);
+    background-color: transparent;
+    border: 1px solid var(--black);
+    padding: 0.625rem 1.25rem;
+    border-radius: 5rem;
+    margin-left: 0.3rem;
+  }
+}
+
+.otherWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.iPhoneProWrapper {
+  background-image: url("../products/iphone15_pro_wide.jpeg");
+  width: 100%;
+  height: 39rem;
+  background-position: center;
+  text-align: center;
+}
+
+.iPhoneWrapper {
+  background-image: url("../products/iphone15.jpeg");
+  width: 100%;
+  height: 34.25rem;
+  background-position: center;
+  text-align: center;
+}
+
+.watchWrapper {
+  background-image: url("../products/apple_watch.jpeg");
+  width: 100%;
+  height: 34.25rem;
+  background-position: center;
+  text-align: center;
+}
+
+.macbookAirWrapper {
+  background-image: url("../products/macbook_air.jpeg");
+  width: 100%;
+  height: 34.25rem;
+  background-position: center;
+  text-align: center;
+}
+
+.airPodWrapper {
+  background-image: url("../products/airpods_pro.jpeg");
+  width: 100%;
+  height: 34.25rem;
+  background-position: center;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .iPadProWrapper {
+    background-image: url("../products/ipad_pro.jpeg");
+  }
+
+  .iPhoneProWrapper {
+    background-image: url("../products/iphone15_pro_2x.jpeg");
+  }
+
+  .otherWrapper {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  .appleWrapper {
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    span {
+      font-size: 0.9rem;
+    }
+
+    .more {
+      padding: 0.7rem 1rem;
+      font-size: 0.875rem;
+    }
+
+    .price {
+      padding: 0.7rem 1rem;
+      font-size: 0.875rem;
+    }
+  }
+}
