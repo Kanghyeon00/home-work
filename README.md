@@ -20,3 +20,5 @@
 1. 결과창: https://kanghyeon00.github.io/home-work/src/login/login.html
 2. HTML: https://github.com/Kanghyeon00/home-work/blob/main/src/login/login.html
 3. CSS: https://github.com/Kanghyeon00/home-work/blob/main/src/login/styles/login.css
+
+## 배포(deploy) 준비
